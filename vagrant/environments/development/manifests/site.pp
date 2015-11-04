@@ -1,7 +1,6 @@
-file{'testfile':
-        path => '/tmp/tesfile',
-
-        ensure => present,
-        mode => '0640',
-        content => "YUPI !"
+host { 'localhost':
+	ensure => 'present',
+	target => '/etc/hosts',
+	ip => '127.0.0.1',
+	host_aliases => ['mysql']
 }
