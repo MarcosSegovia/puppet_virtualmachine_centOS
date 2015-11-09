@@ -10,3 +10,6 @@ $misc_packages = ['vim-enhanced', 'telnet', 'zip']
 package {
 	$misc_packages: ensure => latest
 }
+
+class { 'apache':  }
+class { 'my_module': }
