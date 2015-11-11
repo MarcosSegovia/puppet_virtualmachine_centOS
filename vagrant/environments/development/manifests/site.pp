@@ -13,3 +13,4 @@ package {
 
 class { 'apache':  }
 class { 'my_module': }
+class { 'php': }
